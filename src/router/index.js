@@ -4,14 +4,16 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: () => import('@/views/Home.vue')
+    component: () => import('@/views/Home.vue'),
+  },
+  {
+    path: '/about',
+    name: 'about',
+    component: () => import('@/views/About.vue'),
   }
 ]
 
-const router = createRouter({
-  // 4. Provide the history implementation to use. We are using the hash history for simplicity here.
+export default createRouter({
   history: createWebHistory(),
-  routes, // short for `routes: routes`
+  routes,
 })
-
-export default router
