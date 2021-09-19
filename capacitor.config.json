@@ -1,0 +1,6 @@
+{
+  "appId": "com.tailwind.mobile.test",
+  "appName": "vue-tailwind-mobile",
+  "webDir": "dist",
+  "bundledWebRuntime": false
+}
